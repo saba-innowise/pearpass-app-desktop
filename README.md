@@ -94,7 +94,7 @@ npm test
 - [pearpass-app-browser-extension](https://github.com/tetherto/pearpass-app-browser-extension) - A browser extension for PearPass, a password manager
 - [tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
 - [pearpass-lib-vault](https://github.com/tetherto/pearpass-lib-vault) - A library for managing password vaults
-- [pearpass-lib-vault-mobile](https://github.com/tetherto/pearpass-lib-vault-mobile) - A bare worker and a client for PearPass vaults
+- [pearpass-lib-vault-core](https://github.com/tetherto/pearpass-lib-vault-core) - A bare worker and a client for PearPass vaults
 
 ## License
 

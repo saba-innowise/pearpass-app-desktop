@@ -17,10 +17,10 @@ export { getIpcPath }
  */
 export class NativeMessagingIPCServer {
   /**
-   * @param {import('pearpass-lib-vault-mobile').PearpassVaultClient} pearpassClient
+   * @param {import('pearpass-lib-vault-core').PearpassVaultClient} pearpassClient
    */
   constructor(pearpassClient) {
-    /** @type {import('pearpass-lib-vault-mobile').PearpassVaultClient} */
+    /** @type {import('pearpass-lib-vault-core').PearpassVaultClient} */
     this.client = pearpassClient
     /** @type {import('pear-ipc').Server|null} */
     this.server = null
@@ -365,7 +365,7 @@ export class NativeMessagingIPCServer {
 let ipcServerInstance = null
 
 /**
- * @param {import('pearpass-lib-vault-mobile').PearpassVaultClient} pearpassClient
+ * @param {import('pearpass-lib-vault-core').PearpassVaultClient} pearpassClient
  * @returns {Promise<NativeMessagingIPCServer>}
  */
 export const startNativeMessagingIPC = async (pearpassClient) => {

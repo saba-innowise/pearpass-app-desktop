@@ -1,9 +1,9 @@
-import { workletLogger, PearpassVaultClient } from 'pearpass-lib-vault-mobile'
+import { workletLogger, PearpassVaultClient } from 'pearpass-lib-vault-core'
 
 let pearpassClient = null
 
 /**
- * @param {import('pearpass-lib-vault-mobile').PearpassVaultClient} [ipc]
+ * @param {import('pearpass-lib-vault-core').PearpassVaultClient} [ipc]
  * @param {string} [storagePath]  absolute path where vaults live
  * @param {{ debugMode?: boolean }} [opts={}]
  * @returns {PearpassVaultClient}

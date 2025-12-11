@@ -33,7 +33,7 @@ describe('createOrGetPipe', () => {
     const pipe = createOrGetPipe()
 
     expect(mockRun).toHaveBeenCalledWith(
-      'https://example.com/node_modules/pearpass-lib-vault-mobile/src/worklet/app.js'
+      'https://example.com/node_modules/pearpass-lib-vault-core/src/worklet/app.js'
     )
     expect(pipe).toBe(mockPipe)
   })

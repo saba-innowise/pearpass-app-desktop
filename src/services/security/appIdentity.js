@@ -46,7 +46,7 @@ const fromBase64 = (base64String) =>
 
 /**
  * Create or load the long-term identity keypairs.
- * @param {import('pearpass-lib-vault-mobile').PearpassVaultClient} client
+ * @param {import('pearpass-lib-vault-core').PearpassVaultClient} client
  * @returns {Promise<{ ed25519PublicKey: string, x25519PublicKey: string, creationDate: string }>} base64-encoded public keys and creation date
  */
 export const getOrCreateIdentity = async (client) => {
@@ -261,7 +261,7 @@ export const verifyPairingToken = (ed25519PublicKeyB64, userProvidedToken) => {
 /**
  * Reset the app identity by deleting existing keys and generating new ones
  * This will unpair any connected extensions
- * @param {import('pearpass-lib-vault-mobile').PearpassVaultClient} client
+ * @param {import('pearpass-lib-vault-core').PearpassVaultClient} client
  * @returns {Promise<{ ed25519PublicKey: string, x25519PublicKey: string, creationDate: string }>} new base64-encoded public keys and creation date
  */
 export const resetIdentity = async (client) => {

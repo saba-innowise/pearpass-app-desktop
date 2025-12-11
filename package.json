@@ -6,7 +6,7 @@
     "pre": "pear-electron/pre",
     "routes": ".",
     "unrouted": [
-      "/node_modules/pearpass-lib-vault-mobile/src/worklet/app.js"
+      "/node_modules/pearpass-lib-vault-core/src/worklet/app.js"
     ],
     "gui": {
       "backgroundColor": "#1F2430",
@@ -19,12 +19,14 @@
     ],
     "stage": {
       "entrypoints": [
-        "/node_modules/pearpass-lib-vault-mobile/src/worklet/app.js"
+        "node_modules/pearpass-lib-vault-core/src/worklet/app.js"
       ],
-      "ignore": [
-        ".github/**",
-        "appling/**",
-        ".git/**"
+     "ignore": [
+        ".github",
+        "appling",
+        ".git",
+        ".gitignore",
+        "packages"
       ]
     }
   },
@@ -86,7 +88,7 @@
     "pearpass-lib-data-import": "file:packages/pearpass-lib-data-import",
     "pearpass-lib-ui-theme-provider": "file:packages/pearpass-lib-ui-theme-provider",
     "pearpass-lib-vault": "file:packages/pearpass-lib-vault",
-    "pearpass-lib-vault-mobile": "file:packages/pearpass-lib-vault-core",
+    "pearpass-lib-vault-core": "file:packages/pearpass-lib-vault-core",
     "pearpass-utils-password-check": "file:packages/pearpass-utils-password-check",
     "pearpass-utils-password-generator": "file:packages/pearpass-utils-password-generator",
     "react": "19.1.0",
